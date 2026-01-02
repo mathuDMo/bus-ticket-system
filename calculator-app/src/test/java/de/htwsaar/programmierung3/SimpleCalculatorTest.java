@@ -8,6 +8,20 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 public class SimpleCalculatorTest {
 
     @Test
+    @DisplayName("Die Multiplikation von 2 und 5 sollte 10 ergeben")
+    void multiplyTwoWithFiveShouldReturnTen() {
+
+        var cal = new SimpleCalculator();
+        int number1 = 2;
+        int number2 = 5;
+
+        int resultOfMultiplication = cal.multiply(number1, number2);
+
+        assertEquals(10, resultOfMultiplication);
+    }
+
+
+    @Test
     @DisplayName("Die Addition von 3 und 2 sollte 5 ergeben")
     void add_ThreePlusTwoShouldReturnFive() {
 

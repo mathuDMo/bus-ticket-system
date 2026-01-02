@@ -16,4 +16,9 @@ public class SimpleCalculator {
     }
     return a / b;
   }
+
+  public int multiply(int number1, int number2) {
+     return number1 * number2;
+  }
+
 }
