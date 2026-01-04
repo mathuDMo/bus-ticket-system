@@ -21,4 +21,8 @@ public class SimpleCalculator {
      return number1 * number2;
   }
 
+  public double squareRoot(double number) {
+    return Math.sqrt(number);
+  }
+
 }

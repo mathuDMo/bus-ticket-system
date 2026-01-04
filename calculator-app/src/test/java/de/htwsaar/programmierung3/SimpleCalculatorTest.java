@@ -73,4 +73,15 @@ public class SimpleCalculatorTest {
             cal.divide(number1, number2);
         });
     }
+
+    @Test
+    @DisplayName("Methode soll Wurzel 16 berechnen. Das Ergebnis sollte 4 sein")
+    void squareRoot_squareRootOfsixteenShouldEqualFour() {
+
+        var cal = new SimpleCalculator();
+        double number = 16.0;
+
+        double resultOfSquareRoot = cal.squareRoot(number);
+        assertEquals(4.0,resultOfSquareRoot);
+    }
 }
